@@ -1,1 +1,8 @@
-//your JS code here. If required.
+const displayDate=document.getElementById("timer");
+
+let date=new Date();
+
+setInterval(()=>{
+	date=new Date();
+	displayDate.innerText=date.toLocaleString();
+},1000)
